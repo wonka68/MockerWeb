@@ -1,0 +1,11 @@
+[
+  {
+    "method": "GET",
+    "route": "/fees/GetFeesSummaryByClient",
+    "query": {},
+    "response": {
+      "status": 200,
+      "bodyTemplate": "{\"clients\":[{\"id\":65123,\"name\":\"ACME Widgets Ltd\",\"feeTotal\":123.99,\"paymentFeeTotal\": 234.99,\"paymentFeeCount\":3,\"annualFeeTotal\":666.00,\"annualFeeCount\":4,\"accountOpeningFeeTotal\": 987.00,\"accountOpeningFeeCount\":2}]}"
+    }
+  }
+]

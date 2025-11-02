@@ -1,0 +1,20 @@
+###
+GET https://localhost:61361/api/nonsense
+
+###
+GET https://localhost:61361/api/users/99
+Accept: application/json
+
+###
+GET https://localhost:61361/api/users?role=admin
+Accept: application/json
+
+###
+POST https://localhost:61361/api/users
+Accept: application/json
+ContentType: application/json
+
+{
+   "type": "premium",
+   "name": "ian wilson"
+}

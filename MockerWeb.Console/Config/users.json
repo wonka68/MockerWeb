@@ -1,0 +1,28 @@
+[
+  {
+    "method": "GET",
+    "route": "/api/users",
+    "query": { "role": "admin" },
+    "response": {
+      "status": 200,
+      "bodyTemplate": "{ \"message\": \"Welcome, {{query.role}} user!\" }"
+    }
+  },
+  {
+    "method": "POST",
+    "route": "/api/users",
+    "bodyMatch": { "type": "premium" },
+    "response": {
+      "status": 201,
+      "bodyTemplate": "{ \"message\": \"Created premium user: {{body.name}}\" }"
+    }
+  },
+  {
+    "method": "GET",
+    "route": "/api/users/{id}",
+    "response": {
+      "status": 200,
+      "bodyTemplate": "{ \"message\": \"User ID is {{route.id}}\" }"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "method": "GET",
+    "route": "/api/navigation/get-user-navigation-buttons",
+    "query": { },
+    "response": {
+      "status": 200,
+      "bodyTemplate": "[{\"sectionId\":1,\"title\":\"Clients\",\"path\":\"/clients\",\"displayOrder\":1,\"isStandAlone\":true,\"navMenuItems\":[]},{\"sectionId\":2,\"title\":\"Payments\",\"path\":\"/payments\",\"displayOrder\":2,\"isStandAlone\":false,\"navMenuItems\":[{\"sectionId\":21,\"title\":\"Pending\",\"path\":\"/payments/pending\",\"displayOrder\":1,\"isStandAlone\":true,\"navMenuItems\":[]},{\"sectionId\":22,\"title\":\"Completed\",\"path\":\"/payments/completed\",\"displayOrder\":2,\"isStandAlone\":false,\"navMenuItems\":[]}]},{\"sectionId\":3,\"title\":\"Operations\",\"path\":\"/Operations\",\"displayOrder\":1,\"isStandAlone\":true,\"navMenuItems\":[{\"sectionId\":31,\"title\":\"Fees and Charges\",\"path\":\"/Operations/FeesAndCharges\",\"displayOrder\":2,\"isStandAlone\":true,\"navMenuItems\":[]}]}]"
+    }
+  }
+]
